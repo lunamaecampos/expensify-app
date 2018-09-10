@@ -6,7 +6,7 @@ console.log(path.join(__dirname, 'public'));
 module.exports = {
   entry: './src/app.js',
   output: {
-    path: '/Users/lunacampos/Desktop/DojoAssignments/Udemy/ReactJS/HelloReact/IndecisionApp/public',
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   module: {
