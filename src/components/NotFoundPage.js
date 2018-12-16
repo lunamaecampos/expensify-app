@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
 
-const NotFoundPage = () => (
+export const NotFoundPage = () => (
   <div>
     404! -  <Link to ="/">Go home</Link>
   </div>
