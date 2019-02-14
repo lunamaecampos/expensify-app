@@ -16,13 +16,16 @@ export const LoginPage = ({ startLogin, startFbLogin}) => (
       data-size="medium"
       data-button-type="login_with"
       data-auto-logout-link="false"
-      data-use-continue-as="false"></div>
+      data-use-continue-as="false"
+      onClick={startFbLogin}
+      ></div>
     </div>
   </div>
 );
 
 const mapDispatchToProps = (dispatch) => ({
-  startLogin: () => dispatch(startLogin())
+  startLogin: () => dispatch(startLogin()),
+  startFbLogin: () => dispatch(startFbLogin())
 });
 
 export default connect(undefined, mapDispatchToProps)(LoginPage);
