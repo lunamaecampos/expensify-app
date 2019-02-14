@@ -3,17 +3,22 @@
   color: white;
   border: none;
   display: inline-block;
-  font-size: $font-size-large;
+  font-size: $font-size-small;
   font-weight: 300;
   line-height: 1;
   padding: $s-size;
   text-decoration: none;
+  margin-bottom: $s-size;
 }
 
 .button--link {
   background: none;
 }
-
+.button--google {
+  font-weight: 400;
+  padding: $xs-size $ml-size;
+  border-radius: 3px;
+}
 .button--secondary {
   background-color: #888;
 }

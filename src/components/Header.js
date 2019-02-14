@@ -2,8 +2,9 @@ import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 import { startLogout } from '../actions/auth';
+import { startFbLogout } from '../actions/authfb';
 
-export const Header = ({ startLogout }) => (
+export const Header = ({ startLogout, startFbLogout }) => (
   <header className="header">
     <div className="content-container">
       <div className="header__content">
