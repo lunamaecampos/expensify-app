@@ -5,7 +5,6 @@ export const login = (uid) => ({
 });
 export const startFbLogin = () => {
   return () => {
-    facebookAuthProvider.addScope('user_birthday');
     return firebase.auth().signInWithPopup(facebookAuthProvider).then(function(result) {
     // This gives you a Facebook Access Token.
     var token = result.credential.accessToken;
