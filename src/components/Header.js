@@ -16,7 +16,7 @@ export const Header = ({ startLogout, startFbLogout, username }) => {
         to="/dashboard">
           <div>
             <h1>Expensify</h1>
-            <span>Hi {firstName}, Lets get your expenses under control!</span>
+            <span className="greeting">Hi <span>{firstName}</span>, Lets get your expenses under control!</span>
           </div>
         </Link>
         <button

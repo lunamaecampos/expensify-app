@@ -9,8 +9,14 @@
 }
 .header__title {
   color: white;
-  text-decoration: none;;
+  text-decoration: none;
   h1 {
     margin: 0;
+  }
+}
+.greeting {
+  font-size: $s-size;
+  span {
+    font-weight: bold;
   }
 }
