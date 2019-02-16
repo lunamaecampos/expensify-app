@@ -12,13 +12,13 @@ export const LoginPage = ({ startLogin, startFbLogin}) => (
       className="button button--google"
       onClick={startLogin}
       > Log in With Google</button>
-      <div className="fb-login-button"
-      data-size="medium"
+      <button
+      className="button button--facebook"
       data-button-type="login_with"
       data-auto-logout-link="false"
       data-use-continue-as="false"
       onClick={startFbLogin}
-      ></div>
+      >Log in With Facebook</button>
     </div>
   </div>
 );

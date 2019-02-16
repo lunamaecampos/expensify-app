@@ -1,5 +1,5 @@
 .button {
-  background: $blue;
+  background: $green;
   color: white;
   border: none;
   display: inline-block;
@@ -9,16 +9,25 @@
   padding: $s-size;
   text-decoration: none;
   margin-bottom: $s-size;
+  margin-right: $xs-size;
+  border-radius: 2px;
 }
 
 .button--link {
   background: none;
+  font-weight: 400;
 }
 .button--google {
   font-weight: 400;
   padding: $xs-size $ml-size;
   border-radius: 3px;
 }
+.button--facebook {
+  background-color: $fb-blue;
+  font-weight: 400;
+  padding: $xs-size $ml-size;
+  border-radius: 3px;
+}
 .button--secondary {
-  background-color: #888;
+  background-color: $red;
 }

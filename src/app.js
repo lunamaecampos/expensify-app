@@ -13,6 +13,15 @@ import { firebase } from './firebase/firebase';
 import LoadingPage from './components/LoadingPage';
 
 const store = configureStore();
+// class userInfo extends Component {
+//   constructor() {
+//     super();
+//     this.state = {
+//       user: null // <-- add this line
+//     }
+//   }
+// }
+
 
 const jsx = (
   <Provider store={store}>
@@ -32,7 +41,9 @@ ReactDOM.render(<LoadingPage />, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
-    store.dispatch(login(user.uid));
+    const uid= user.uid;
+    const username=user.displayName;
+    store.dispatch(login(user.uid, user.displayName));
     store.dispatch(startSetExpenses()).then(() => {
       renderApp();
       if (history.location.pathname === '/') {
